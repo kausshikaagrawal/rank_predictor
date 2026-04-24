@@ -1,20 +1,19 @@
 from flask import Flask, request, jsonify
-import pickle
 import os
 import numpy as np
 from datetime import datetime
 from pymongo import MongoClient
+import xgboost as xgb
 
 app = Flask(__name__)
 
-# Load the trained XGBoost model
+# Load the trained XGBoost model natively to save Vercel bundle size
 current_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(current_dir, 'model.pkl')
+model_path = os.path.join(current_dir, 'model.json')
 
-model = None
+model = xgb.XGBRegressor()
 try:
-    with open(model_path, 'rb') as f:
-        model = pickle.load(f)
+    model.load_model(model_path)
 except Exception as e:
     print(f"Error loading model: {e}")
 

@@ -1,21 +1,20 @@
 from flask import Flask, request, jsonify, send_from_directory
-import pickle
 import os
 import numpy as np
 from datetime import datetime
 from pymongo import MongoClient
+import xgboost as xgb
 
 # Use the current directory for static files
 current_dir = os.path.dirname(os.path.abspath(__file__))
 app = Flask(__name__, static_folder=current_dir, static_url_path='')
 
-# Load the trained XGBoost model from the api folder
-model_path = os.path.join(current_dir, 'api', 'model.pkl')
+# Load the trained XGBoost model from the api folder natively
+model_path = os.path.join(current_dir, 'api', 'model.json')
 
-model = None
+model = xgb.XGBRegressor()
 try:
-    with open(model_path, 'rb') as f:
-        model = pickle.load(f)
+    model.load_model(model_path)
 except Exception as e:
     print(f"Error loading model: {e}")
 

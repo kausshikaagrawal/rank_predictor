@@ -67,8 +67,7 @@ model.fit(X, y)
 
 # 3. Save the Model
 current_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(current_dir, 'model.pkl')
-with open(model_path, 'wb') as f:
-    pickle.dump(model, f)
+model_path = os.path.join(current_dir, 'model.json')
+model.save_model(model_path)
 
 print(f"Model saved successfully to {model_path}")
