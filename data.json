@@ -1,0 +1,59 @@
+{
+  "marks_to_rank": [
+    { "min_marks": 230, "max_marks": 240, "estimated_rank": "1 - 20", "numeric_rank": 10 },
+    { "min_marks": 220, "max_marks": 229, "estimated_rank": "21 - 50", "numeric_rank": 35 },
+    { "min_marks": 210, "max_marks": 219, "estimated_rank": "51 - 100", "numeric_rank": 75 },
+    { "min_marks": 200, "max_marks": 209, "estimated_rank": "101 - 250", "numeric_rank": 175 },
+    { "min_marks": 190, "max_marks": 199, "estimated_rank": "251 - 500", "numeric_rank": 375 },
+    { "min_marks": 180, "max_marks": 189, "estimated_rank": "501 - 800", "numeric_rank": 650 },
+    { "min_marks": 170, "max_marks": 179, "estimated_rank": "801 - 1,500", "numeric_rank": 1150 },
+    { "min_marks": 160, "max_marks": 169, "estimated_rank": "1,501 - 2,500", "numeric_rank": 2000 },
+    { "min_marks": 150, "max_marks": 159, "estimated_rank": "2,501 - 3,500", "numeric_rank": 3000 },
+    { "min_marks": 140, "max_marks": 149, "estimated_rank": "3,501 - 5,000", "numeric_rank": 4250 },
+    { "min_marks": 130, "max_marks": 139, "estimated_rank": "5,001 - 7,000", "numeric_rank": 6000 },
+    { "min_marks": 120, "max_marks": 129, "estimated_rank": "7,001 - 9,500", "numeric_rank": 8250 },
+    { "min_marks": 110, "max_marks": 119, "estimated_rank": "9,501 - 12,500", "numeric_rank": 11000 },
+    { "min_marks": 100, "max_marks": 109, "estimated_rank": "12,501 - 16,000", "numeric_rank": 14250 },
+    { "min_marks": 90, "max_marks": 99, "estimated_rank": "16,001 - 20,000", "numeric_rank": 18000 },
+    { "min_marks": 80, "max_marks": 89, "estimated_rank": "20,001 - 25,000", "numeric_rank": 22500 },
+    { "min_marks": 70, "max_marks": 79, "estimated_rank": "25,001 - 30,000", "numeric_rank": 27500 },
+    { "min_marks": 0, "max_marks": 69, "estimated_rank": "30,001+", "numeric_rank": 35000 }
+  ],
+  "cutoffs": [
+    {
+      "campus": "Manipal (Main Campus)",
+      "branches": [
+        { "name": "Computer Science and Engineering (CSE)", "closing_rank": 1600 },
+        { "name": "CSE (Artificial Intelligence & Machine Learning)", "closing_rank": 2300 },
+        { "name": "Computer and Communication Engineering (CCE)", "closing_rank": 3200 },
+        { "name": "Information Technology (IT)", "closing_rank": 3500 },
+        { "name": "Data Science and Engineering", "closing_rank": 4600 },
+        { "name": "Electronics and Communication Engineering (ECE)", "closing_rank": 8500 },
+        { "name": "Electrical and Electronics Engineering (EEE)", "closing_rank": 13000 },
+        { "name": "Mechatronics", "closing_rank": 21000 },
+        { "name": "Mechanical Engineering", "closing_rank": 24000 },
+        { "name": "Civil Engineering", "closing_rank": 36000 }
+      ]
+    },
+    {
+      "campus": "Bengaluru",
+      "branches": [
+        { "name": "Computer Science and Engineering (CSE)", "closing_rank": 7200 },
+        { "name": "CSE (Artificial Intelligence & Machine Learning)", "closing_rank": 8800 },
+        { "name": "Information Technology (IT)", "closing_rank": 10500 },
+        { "name": "Electronics and Communication Engineering (ECE)", "closing_rank": 16000 }
+      ]
+    },
+    {
+      "campus": "Jaipur",
+      "branches": [
+        { "name": "Computer Science and Engineering (CSE)", "closing_rank": 21000 },
+        { "name": "CSE (Artificial Intelligence & Machine Learning)", "closing_rank": 24000 },
+        { "name": "Information Technology (IT)", "closing_rank": 28000 },
+        { "name": "Computer and Communication Engineering (CCE)", "closing_rank": 31000 },
+        { "name": "Electronics and Communication Engineering (ECE)", "closing_rank": 38000 },
+        { "name": "Mechanical Engineering", "closing_rank": 48000 }
+      ]
+    }
+  ]
+}

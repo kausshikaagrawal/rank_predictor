@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT Rank & Branch Predictor | Manipal, Bengaluru, Jaipur</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-effects">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container">
+        <header class="app-header">
+            <h1>MIT Rank & Branch Predictor</h1>
+            <p>Based on Past 10 Years Data for Manipal, Bengaluru & Jaipur Campuses</p>
+        </header>
+
+        <main class="main-content">
+            <section class="predictor-card">
+                <form id="predictor-form">
+                    <div class="form-group">
+                        <label for="user-name">Full Name</label>
+                        <input type="text" id="user-name" name="user-name" placeholder="e.g. John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-email">Email Address</label>
+                        <input type="email" id="user-email" name="user-email" placeholder="e.g. john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="met-score">MET Score (out of 240)</label>
+                        <input type="number" id="met-score" name="met-score" min="0" max="240" placeholder="e.g. 150" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="board-percentage">12th Board Percentage (Optional)</label>
+                        <input type="number" id="board-percentage" name="board-percentage" min="0" max="100" step="0.1" placeholder="e.g. 85.5">
+                        <small>MAHE uses a 50% MET + 50% Boards formula.</small>
+                    </div>
+
+                    <button type="submit" class="btn-predict">Predict My Rank & Branches</button>
+                </form>
+            </section>
+
+            <section id="results-section" class="results-section hidden">
+                <div class="rank-display">
+                    <h2>Estimated Rank</h2>
+                    <div id="predicted-rank-range" class="rank-value">--</div>
+                    <p class="rank-disclaimer">This is a highly estimated rank based on historical data. Actual ranks depend on board normalization.</p>
+                </div>
+
+                <div class="branches-container">
+                    <h3>Eligible Branches</h3>
+                    <div id="campuses-wrapper" class="campuses-wrapper">
+                        <!-- Campus results will be injected here via JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="app-footer">
+            <p>Data estimated based on publicly available past cutoffs. Please update <code>data.json</code> with exact library portal data if available.</p>
+        </footer>
+    </div>
+
+    <!-- Application Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
