@@ -2,5 +2,5 @@
 .env.local
 __pycache__/
 *.pyc
-
 .vercel
+api/model.json
